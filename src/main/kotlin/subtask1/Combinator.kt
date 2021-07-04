@@ -20,8 +20,8 @@ class Combinator {
 
     private fun factorial (f:Int):Long{
         if(f == 0)  return 0
-        if( f!=1 ) {
-            return f * factorial(f-1);
-        } else return 1
+        return if( f!=1 ) {
+            f * factorial(f-1);
+        } else 1
     }
 }
