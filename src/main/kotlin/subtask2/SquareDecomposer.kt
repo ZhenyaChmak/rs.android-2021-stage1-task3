@@ -17,7 +17,7 @@ class SquareDecomposer {
 
             var nextRemaider = sqrt(remainder.toDouble()).toInt()
             if (nextRemaider >= i)
-                nextRemaider = i - 1
+                return null
 
             val arr = decompose(remainder, nextRemaider)
             if (arr != null)
